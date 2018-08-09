@@ -139,7 +139,7 @@
 			 //페이지 번호 나열하기
 			for(int i=startPage ; i<(startPage+limit);i++){
 				if( i == pageNUM){%>
-					&nbsp;<%=i%>&nbsp;
+					<font color="red"><b><%=i%></b></font>
 <% 
 				} else { 
 %>

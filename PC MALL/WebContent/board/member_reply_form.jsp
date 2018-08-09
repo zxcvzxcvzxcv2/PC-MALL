@@ -39,7 +39,7 @@
 <script>
 function go_reply()
 {
-	var form = document.reply_form;
+	var form = document.member_reply_form;
 	
 	if(!form.title.value){
 		alert("제목을 입력하세요.");

@@ -90,9 +90,9 @@ try {
 
     <tr>
 	   	<td colspan=4 align=right height=28 >
-	   	  <a href="reply_form.jsp?b_id=<%=b_id%>"><img src="img/b_re.gif" border=0></a>
-		  <a href="update_form.jsp?b_id=<%=b_id%>"><img src="img/b_modify.gif" border=0></a>
-		  <a href="delete_confirm.jsp?b_id=<%=b_id%>"><img src="img/b_delete.gif" border=0></a>
+	   	  <a href="member_reply_form.jsp?b_id=<%=b_id%>"><img src="img/b_re.gif" border=0></a>
+		  <a href="member_update_form.jsp?b_id=<%=b_id%>"><img src="img/b_modify.gif" border=0></a>
+		  <a href="member_delete_confirm.jsp?b_id=<%=b_id%>"><img src="img/b_delete.gif" border=0></a>
 		  <a href="javascript:history.go(-1)"><img src="img/b_list.gif" border=0></a>
 	   	</td>
 	  </TR>

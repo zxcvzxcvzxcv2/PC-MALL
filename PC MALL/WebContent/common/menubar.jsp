@@ -22,21 +22,22 @@ function MM_showHideLayers() { //v3.0
    
     <td width=95 height=24><a href="../main/index.jsp" onMouseOver="document.images[1].src='../img/bar_11.gif';" onMouseOut="document.images[1].src='../img/bar_1.gif';"><img src="../img/bar_1.gif" width=95 height=24></a></td>
 
-	<td width=95 height=24><a href="../service/company_intro.jsp" onMouseOver="document.images[2].src='../img/bar_22.gif';;MM_showHideLayers('shop','','hide','member','','hide','qna','','hide','used','','hide')" onMouseOut="document.images[2].src='../img/bar_2.gif';">
+	<td width=95 height=24><a href="../service/company_intro.jsp" onMouseOver="document.images[2].src='../img/bar_22.gif';;MM_showHideLayers('shop','','hide','member','','hide','qna','','hide')" onMouseOut="document.images[2].src='../img/bar_2.gif';">
    <img src="../img/bar_2.gif" width=95 height=24></a></td>
 
-    <td width=95 height=24 border=0><a src="../img/bar_3.gif"   onMouseOver="document.images[3].src='../img/bar_33.gif';MM_showHideLayers('shop','','show','member','','hide','qna','','hide','used','','hide')" onMouseOut="document.images[3].src='../img/bar_3.gif';"><img name="Image1" border=2 src="../img/bar_3.gif" width=95 height=24></a></td>
+    <td width=95 height=24 border=0><a src="../img/bar_3.gif"   onMouseOver="document.images[3].src='../img/bar_33.gif';MM_showHideLayers('shop','','show','member','','hide','qna','','hide')" onMouseOut="document.images[3].src='../img/bar_3.gif';"><img name="Image1" border=2 src="../img/bar_3.gif" width=95 height=24></a></td>
 
-   <td width=95 height=24><a href="../product/basket_view.jsp?user_id=<%=pid %>" onMouseOver="document.images[4].src='../img/bar_44.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','hide','used','','hide')" onMouseOut="document.images[4].src='../img/bar_4.gif';"><img src="../img/bar_4.gif" width=95 height=24></a></td>
+   <td width=95 height=24><a href="../product/basket_view.jsp?user_id=<%=pid %>" onMouseOver="document.images[4].src='../img/bar_44.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','hide')" onMouseOut="document.images[4].src='../img/bar_4.gif';"><img src="../img/bar_4.gif" width=95 height=24></a></td>
    
-   <td width=95 height=24><a src="../img/bar_5.gif" onMouseOver="document.images[5].src='../img/bar_55.gif';MM_showHideLayers('shop','','hide','member','','show','qna','','hide','used','','hide')" onMouseOut="document.images[5].src='../img/bar_5.gif';"><img name="Image2"  border=2  src="../img/bar_5.gif" width=95 height=24></a></td>  
+   <td width=95 height=24><a src="../img/bar_5.gif" onMouseOver="document.images[5].src='../img/bar_55.gif';MM_showHideLayers('shop','','hide','member','','show','qna','','hide')" onMouseOut="document.images[5].src='../img/bar_5.gif';"><img name="Image2"  border=2  src="../img/bar_5.gif" width=95 height=24></a></td>  
  
- 	<td width=95 height=24><a href="../member/user.jsp" onMouseOver="document.images[6].src='../img/bar_66.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','hide','used','','hide');" onMouseOut="document.images[6].src='../img/bar_6.gif';">
+ 	<td width=95 height=24><a href="../member/user.jsp" onMouseOver="document.images[6].src='../img/bar_66.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','hide');" onMouseOut="document.images[6].src='../img/bar_6.gif';">
    <img src="../img/bar_6.gif" width=95 height=24></a></td>
 
-	<td width=95 height=24><a src="../img/bar_7.gif"  onMouseOver="document.images[7].src='../img/bar_77.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','show','used','','hide')" onMouseOut="document.images[7].src='../img/bar_7.gif';"><img name="Image3"  border=2   src="../img/bar_7.gif" width=95 height=24></a></td>
+	<td width=95 height=24><a src="../img/bar_7.gif"  onMouseOver="document.images[7].src='../img/bar_77.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','show')" onMouseOut="document.images[7].src='../img/bar_7.gif';"><img name="Image3"  border=2   src="../img/bar_7.gif" width=95 height=24></a></td>
     
-    <td width=80 height=24><a src="../img/old.gif"  onMouseOver="document.images[8].src='../img/old.gif';MM_showHideLayers('shop','','hide','member','','hide','qna','','hide','used','','show')" onMouseOut="document.images[8].src='../img/old.gif';"><img name="Image4"  border=2   src="../img/old.gif" width=80 height=24></a></td>
+    <td width=80 height=24><a href="../used/used_sale.jsp" onMouseOver="document.images[8].src='../img/old.gif';;MM_showHideLayers('shop','','hide','member','','hide','qna','','hide')" onMouseOut="document.images[8].src='../img/old.gif';">
+   <img src="../img/old.gif" width=80 height=24></a></td>
 	
 
 <tr height=25 > 
@@ -90,15 +91,3 @@ function MM_showHideLayers() { //v3.0
   </table>
 </div>
 
-<div id="used" style="position:absolute; left:700px; top:99px; width:160px; height:20px; z-index:100; visibility: hidden"> 
-  <table width=140 border=0 cellspacing=2 cellpadding=0 height=20>
-    <tr> 
-      <td width=70 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 
-        <div align=center class="layerstyle"><a href="../used/used_sale.jsp">중고 구매</a></div>
-      </td>
-      <td width=70 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 
-        <div align=center class="layerstyle"><a href="../used/used_purchase.jsp">중고 판매</a></div>
-      </td>
-    </tr>
-  </table>
-</div>

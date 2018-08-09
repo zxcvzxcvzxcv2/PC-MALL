@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <HTML>
 <HEAD>
-<TITLE>로그온폼</TITLE>
+<TITLE>로그인폼</TITLE>
 <LINK href="../common/u3.css" type=text/css rel=STYLESHEET>
 <script language="JavaScript">
 	function checkInput() {
@@ -56,8 +56,10 @@
 							</tr>
 							<tr height=40 valign=bottom>
 								<td></td>
-								<td align=center><input type="button" value="로그인"
-									OnClick="checkInput();"><input type="reset" value="취 소"></td>
+								<td align=center>
+								<input type="button" value="로그인"OnClick="checkInput();">
+								<input type="reset" value="취 소">
+								</td>
 							</tr>
 						</table>
 					</td>

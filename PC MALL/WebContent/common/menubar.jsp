@@ -63,9 +63,12 @@ function MM_showHideLayers() { //v3.0
 </div>
 
 <div id="member" style="position:absolute; left:420px; top:99px; width:160px; height:20px; z-index:100; visibility: hidden"> 
-  <table width=180 border=0 cellspacing=2 cellpadding=0 height=20>
+  <table width=250 border=0 cellspacing=2 cellpadding=0 height=20>
     <tr> 
-      <td width=100 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 
+      <td width=80 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 
+        <div align=center class="layerstyle"><a href="../member/purchase_history.jsp?user_id=<%= pid %>">구매 내역</a></div>
+      </td>
+      <td width=90 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 
         <div align=center class="layerstyle"><a href="../member/modify.jsp?user_id=<%= pid %>">회원정보수정</a></div>
       </td>
       <td width=80 onMouseOver="this.style.backgroundColor='#cdcdcd'" onMouseOut="this.style.backgroundColor=''"> 

@@ -13,8 +13,8 @@
 	String mess = request.getParameter("message");
 
 	String sql = " update basket set  gubun='"+rr+"' ,message='"+mess+"' where user_id ='"+user_id+"'";
-	String sql1 = "update member set mem_email=?, mem_address=?, mem_phone=? ";
-			 sql1 = sql1 + " where mem_uid ='"+user_id+"'";
+	String sql1 = "update member set m_email=?, m_address=?, m_phone=? ";
+			 sql1 = sql1 + " where m_uid ='"+user_id+"'";
 	try{
 		Statement stmt = con.createStatement();
 		stmt.executeUpdate(sql);

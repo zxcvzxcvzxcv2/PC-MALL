@@ -21,14 +21,14 @@
 <%
 	String pid =(String)session.getAttribute("pid");
 	String sql1="select id,name,price,qty from basket_view where user_id= '"+pid+"'";
-	String sql2="select mem_uid,mem_name,mem_email,mem_address,mem_phone from member where mem_uid ='"+ pid+ "'";
+	String sql2="select m_uid,m_name,m_email,m_address,m_phone from member where m_uid ='"+ pid+ "'";
 try {
 	DBConnectionManager pool = DBConnectionManager.getInstance();
 	Connection con = pool.getConnection("ora8");
 	Statement stmt = con.createStatement();
 	ResultSet rs1=stmt.executeQuery(sql1);
 %>
-	<center><br>
+	<br>
 	<table border=1 cellpadding=0 cellspacing=0 width=550 align=center>
 		<tr bgcolor=#7aaad5>
 			<td height=30 align=middle bgcolor=#ccffcc><font size=3 color=#000000><b>[<%=pid%>]님의 주문하실 상품은 아래와 같습니다.</b></font></td>

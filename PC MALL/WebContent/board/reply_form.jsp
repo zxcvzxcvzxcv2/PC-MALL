@@ -1,5 +1,8 @@
 <%@ page  import="java.sql.*,oracle.dbpool.*" contentType="text/html;charset=UTF-8" %>
 
+
+
+
 <%
 
   
@@ -10,6 +13,8 @@
    String  b_name=null, b_email=null, b_title=null, b_content=null;
    int      ref = 0, step=0, level=0;
    String b_id=request.getParameter("b_id");
+   String m_name=request.getParameter("M_NAME");
+   String m_email=request.getParameter("M_EMAIL");
 
       
    Statement stmt= con.createStatement();
@@ -86,7 +91,7 @@ function go_reply()
 
 	<tr>
 	   <td width=110 align=center bgcolor="#7eaee9">등록자</td>
-	   <td width=180 bgcolor=ffffff>&nbsp;<input type="text" name="name" size=20></td>
+	   <td width=180 bgcolor=ffffff>&nbsp;<input type="text" name="name" size=20 ></td>
 	   <td width=100 align=center bgcolor="#7eaee9">비밀번호</td>
 	   <td width=160 bgcolor=ffffff>&nbsp;<input type="password" name="pwd" size=15 value="" ></td>
 	</tr>	

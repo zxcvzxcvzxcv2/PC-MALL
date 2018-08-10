@@ -40,7 +40,7 @@ try {
 <br>
 <table border=1 cellpadding=0 cellspacing=0 width=550 align=center>
 	<tr bgcolor=#7aaad5>
-		<td height=30 align=middle bgcolor=#ccffff><font size=3 color=#000000><b>[<%=pid%>]님의 장바구니입니다.</b></font></td>
+		<td height=30 align=middle bgcolor=#ccffff><font size=3 color=#000000><b>[<%=pid%>]님의 구매내역입니다.</b></font></td>
 	</tr>
 </table>
 
@@ -50,7 +50,7 @@ try {
 		<th  bgcolor="#0066ff"><font color="#ffffff">수량</font></th>
 		<th  bgcolor="#0066ff"><font color="#ffffff">판매가</font></th>
 		<th  bgcolor="#0066ff"><font color="#ffffff"> 합계금액</font></th>
-		<th  bgcolor="#0066ff"><font color="#ffffff">취소</font></th>
+		
 	</tr>
 <%
 	while(rs.next()) {
@@ -63,27 +63,11 @@ try {
 	<form method="post" action="basket_modify.jsp?productnum=<%= id %>&<%=number%>"> 
 		<td  bgcolor="#ffffcc"><a href="product.jsp?i=<%= id %>">&nbsp;<%=name%></a></td>
 		<td bgcolor="#e2edfa" width=84 >
-			<input type=text name=number value=<%=qty%> size=4 onkeydown='return onlyNumber(event)' onkeyup='removeChar(event)' style='ime-mode:disabled;'>
-			<script>
-		function onlyNumber(event){
-			event = event || window.event;
-			var keyID = (event.which) ? event.which : event.keyCode;
-			if ( (keyID >= 48 && keyID <= 57) || (keyID >= 96 && keyID <= 105) || keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 ) 
-				return;
-			else
-				return false;
-		}
-		function removeChar(event) {
-			event = event || window.event;
-			var keyID = (event.which) ? event.which : event.keyCode;
-			if ( keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 ) 
-				return;
-			else
-				event.target.value = event.target.value.replace(/[^0-9]/g, "");
-		}
-	</script>
-			<input type=submit value="수정">
-		</td>
+			
+		<c:set var="fmtPrice" value="<%=qty%>"/>
+				&nbsp;<fmt:formatNumber value="${fmtPrice }" pattern="#,###" />&nbsp;</td>
+			
+		
 	</form>
 		<td  bgcolor="#e2edfa" align=right width=70>
 		<c:set var="fmtPrice" value="<%= price%>"/>
@@ -91,12 +75,7 @@ try {
 		<td bgcolor="#e2edfa" width=70 align=right>
 		<c:set var="fmtPrice" value="<%= price*qty%>"/>
 				&nbsp;<fmt:formatNumber value="${fmtPrice }" pattern="#,###" />&nbsp;원</td>
-	<form method=post action="basket_delete.jsp?productnum=<%=id%>">
-		<td width=1 bgcolor="#e2edfa">
-		<input type=hidden name="id" value="<%=id%>">
-		<input type=submit value="삭제">
-		</td>
-	</form>
+
 	</tr>
 <%	}	%>
 </table><br>
@@ -110,8 +89,6 @@ try {
 %>
 <table align=center border=0 width=200>
 <tr >
-	<td><a href="order_view.jsp"><img src="../img/basket_approval.gif" border=0></a></td>
-    <td><a href="basket_delete.jsp?productnum=deleteall"><img src="../img/basket_del.gif" border=0></a></td>
 	<td><a href="../main/index.jsp"><img src="../img/basket_shopping.gif" border=0></a></td>
 </tr>
 </table>

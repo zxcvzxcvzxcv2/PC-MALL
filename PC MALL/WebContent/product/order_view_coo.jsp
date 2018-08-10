@@ -18,7 +18,7 @@
 		int number=1;
 		int totalprice=0;
 		int totalqty=0;
-
+        
 		String user_name,ssn,user_id,passwd,zip,address,e_mail,job,phone;
 %>
 
@@ -41,7 +41,6 @@ try {
 
 %>
 
-<center>
 		<table>
 		<tr>
             <td width=600><b><font face="aroha" >&nbsp;[<%=pid%>]회원님의 주문하실 공동구매 내역입니다. </font></b></td>
@@ -49,7 +48,7 @@ try {
 		</tr>
 		</table>
 <font size=2 color="#39599c"><b><%=pid%></b></font><font size=2>님이 주문하신 상품은 아래와 같습니다</font>
-</center>
+
 
 
 <table border="0" cellpadding='0' cellspacing='0' width='620' align="center">
@@ -67,17 +66,17 @@ try {
 	</tr>
 <%
 		while(rs1.next()) {
-			id=rs1.getInt(1);
-			name=rs1.getString(2);
-			price=rs1.getInt(3);
-			company_id=rs1.getString(4);
-			expression=rs1.getString(5);
-			photo=rs1.getString(6);
-			category=rs1.getString(7);
-			qty=rs1.getInt(8);
+			id          =rs1.getInt(1);
+			name        =rs1.getString(2);
+			price       =rs1.getInt(3);
+			company_id  =rs1.getString(4);
+			expression  =rs1.getString(5);
+			photo       =rs1.getString(6);
+			category    =rs1.getString(7);
+			qty         =rs1.getInt(8);
 
-			totalprice=totalprice +  (price*qty);
-			totalqty = totalqty + (qty);
+			totalprice  =totalprice +  (price*qty);
+			totalqty    = totalqty + (qty);
 %>
 	<tr>
 		<td  bgcolor='#FFFFCC'><font size="2"><%= name %></font></td>
@@ -107,13 +106,13 @@ try {
 			
 		rs2=stmt.executeQuery(sql2);
 		if(rs2.next()){
-			user_name=rs2.getString(1);
-			user_id=rs2.getString(3);
-			passwd=rs2.getString(4);
-			zip=rs2.getString(5);
-			address=rs2.getString(6);
-			phone=rs2.getString(7);
-			e_mail=rs2.getString(8);
+			user_name   =rs2.getString(1);
+			user_id     =rs2.getString(3);
+			passwd      =rs2.getString(4);
+			zip         =rs2.getString(5);
+			address     =rs2.getString(6);
+			phone       =rs2.getString(7);
+			e_mail      =rs2.getString(8);
 		}
 %>
 

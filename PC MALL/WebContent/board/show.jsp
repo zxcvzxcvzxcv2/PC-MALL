@@ -93,7 +93,7 @@ try {
 	   	  <a href="reply_form.jsp?b_id=<%=b_id%>"><img src="img/b_re.gif" border=0></a>
 		  <a href="update_form.jsp?b_id=<%=b_id%>"><img src="img/b_modify.gif" border=0></a>
 		  <a href="delete_confirm.jsp?b_id=<%=b_id%>"><img src="img/b_delete.gif" border=0></a>
-		  <a href="declaration.jsp?b_id=<%=b_id%>"><img src="img/declaration.gif" border=0></a>
+		  <a href="mailform.jsp?b_id=<%=b_id%>"><img src="img/singo.gif" border=0></a>
 		  <a href="javascript:history.go(-1)"><img src="img/b_list.gif" border=0></a>
 	   	</td>
 	  </TR>

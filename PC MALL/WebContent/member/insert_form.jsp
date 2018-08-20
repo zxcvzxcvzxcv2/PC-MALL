@@ -37,6 +37,9 @@
 		
 		if(form.ssn1.value == "")
 			msg += "주민등록번호를 입력하세요.\n\n";
+		
+		if(form.email.value=="")
+			msg += "이메일을 입력하세요.\n\n";
 	
 		if(msg == "== 가입시 오류 사항 ==\n\n") { 
 			form.submit();
@@ -135,7 +138,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor=#ccffff> e-mail</td>
+			<td bgcolor=#ccffff> e-mail<font color=red> *</font></td>
 			<td bgcolor=white valign=middle>
 				<input type=text name=email size=30 maxlength=30 value=""></td>
 		</tr>

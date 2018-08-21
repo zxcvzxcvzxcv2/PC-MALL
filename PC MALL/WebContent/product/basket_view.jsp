@@ -7,7 +7,7 @@
 %>
 	 <script language="Javascript">
 		 alert("로그인을 하세요")
-		location.href="../member/login.jsp";
+		location.href="../Member/login.jsp";
      </script>
 <%
 	 } else {

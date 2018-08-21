@@ -43,13 +43,16 @@
 						<img src="img/middle_line_01.gif" border=0 width=200></td>
 				</tr>
 				<tr>
-					<td><a href="../member/user.jsp"> &nbsp;회원가입</a></td>
+					<td><a href="../Member/insert_form_BootStrap.jsp"> &nbsp;회원가입</a></td>
 				</tr>
 				<tr>
-					<td><a href="../member/modify.jsp?user_id=<%=user_id%>"> &nbsp;회원정보수정</a></td>
+					<td><a href="../Member/update_form_BootStrap.jsp?user_id=<%=user_id%>"> &nbsp;회원정보수정</a></td>
 				</tr>
 				<tr>
-					<td><a href="../member/delete.jsp?user_id=<%=user_id%>"> &nbsp;회원탈퇴</a></td>
+					<td><a href="../Member/Mywrite.jsp"> &nbsp;내가 쓴 게시물</a></td>
+				</tr>
+				<tr>
+					<td><a href="../Member/delete_BootStrap.jsp?user_id=<%=user_id%>"> &nbsp;회원탈퇴</a></td>
 				</tr>
 				<tr>
 					<td><a href="../product/basket_view.jsp"> &nbsp;장바구니</a></td>
@@ -83,7 +86,7 @@
 							<img src="img/middle_line_01.gif" border=0 width=200></td>
 						</tr>
 						<tr>
-							<td><a href="../member/login.jsp"> &nbsp;로그인</a></td>
+							<td><a href="../Member/index_BootStrap.jsp"> &nbsp;로그인</a></td>
 						</tr>
 						<tr>
 							<td><a href="../service/company_intro.jsp"> &nbsp;회사소개</a></td>

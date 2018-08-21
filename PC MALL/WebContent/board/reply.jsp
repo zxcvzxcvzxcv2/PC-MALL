@@ -45,7 +45,7 @@ Connection con = pool.getConnection("ora8");//인자값 jdbc
              ref=Integer.parseInt(request.getParameter("ref"));
              step=Integer.parseInt(request.getParameter("step"));
              level=Integer.parseInt(request.getParameter("level"));
-     String str="update re_board set step=step+1 where ref="+ref+" and step > "+ step;
+     String str="update reply_board set step=step+1 where ref="+ref+" and step > "+ step;
    			stmt.executeUpdate(str);
    			stmt.close();
             step=step+1;
@@ -58,7 +58,7 @@ Connection con = pool.getConnection("ora8");//인자값 jdbc
         }        
 
 
-	sql = "insert into re_board values(?,?,?,?,?,?,sysdate,?,?,?,?,?)";
+	sql = "insert into reply_board values(?,?,?,?,?,?,sysdate,?,?,?,?,?)";
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	pstmt.setInt(1,b_id);
 	pstmt.setString(2,b_name);

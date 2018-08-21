@@ -15,11 +15,13 @@
 
 <%
 request.setCharacterEncoding("utf-8");
- 
+
+String email = request.getParameter("email");
+String number = request.getParameter("number");
 String from = request.getParameter("from");
 String to = request.getParameter("to");
-String subject = request.getParameter("subject");
-String content = request.getParameter("content");
+String subject = request.getParameter("reportTitle");
+String content = request.getParameter("reportContent");
 // 입력값 받음
  
 Properties p = new Properties(); // 정보를 담을 객체
@@ -42,8 +44,18 @@ try{
     ses.setDebug(true);
      
     MimeMessage msg = new MimeMessage(ses); // 메일의 내용을 담을 객체
+    
     msg.setSubject(subject); // 제목
-     
+    
+    StringBuffer buffer = new StringBuffer();
+    buffer.append("연락처 : ");
+    buffer.append(number+"<br>");
+    buffer.append("이메일 : ");
+    buffer.append(email+"<br>");
+    buffer.append("제목 : ");
+    buffer.append(subject+"<br>");
+    buffer.append("내용 : ");
+    buffer.append(content+"<br>");
     Address fromAddr = new InternetAddress(from);
     msg.setFrom(fromAddr); // 보내는 사람
      
@@ -63,3 +75,4 @@ try{
 out.println("<script>alert('Send Mail Success!!');location.href='mailForm.html';</script>");
 // 성공 시
 %>
+<!-- 출처 http://hunit.tistory.com/306 -->

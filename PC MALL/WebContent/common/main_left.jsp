@@ -56,22 +56,25 @@ function MM_showHideLayers() {
          <td height=22 valign=middle align=center><img src="../img/m_ani.gif" width=125 height=22></td>
       </tr>
       <tr> 
-          <td><a href="../product/categoryall.jsp?c=23" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../img/nav_1_back.gif',1);MM_showHideLayers('computer','','show','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')"><img name="Image1" border=0 src="../img/nav_1.gif" width=124 height=30></a></td>
+          <td><a href="../product/categoryall.jsp?c=23" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../img/nav_1_back.gif',1);MM_showHideLayers('computer','','show','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')"><img name="Image1" border=0 src="../img/nav_1.gif" width=124 height=30></a></td>
       </tr>
       <tr> 
-          <td><a href="../product/categoryall.jsp?c=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','../img/nav_2_back.gif',1);MM_showHideLayers('computer','','hide','pc','','show','software','','hide','network','','hide','digital','','hide','etc','','hide')"><img name="Image2" border=0 src="../img/nav_2.gif" width=124 height=30></a></td>
+          <td><a href="../product/categoryall.jsp?c=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','../img/nav_2_back.gif',1);MM_showHideLayers('computer','','hide','pc','','show','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')"><img name="Image2" border=0 src="../img/nav_2.gif" width=124 height=30></a></td>
       </tr>
       <tr> 
-          <td><a href="../product/categoryall.jsp?c=30" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','../img/nav_3_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','show','network','','hide','digital','','hide','etc','','hide')"><img name="Image3" border=0 src="../img/nav_3.gif" width=124 height=30></a></td>
+          <td><a href="../product/categoryall.jsp?c=30" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','../img/nav_3_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','show','network','','hide','digital','','hide','etc','','hide','old','','hide')"><img name="Image3" border=0 src="../img/nav_3.gif" width=124 height=30></a></td>
       </tr>
       <tr> 
-          <td><a href="../product/categoryall.jsp?c=26" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../img/nav_4_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','show','digital','','hide','etc','','hide')"><img name="Image4" border=0 src="../img/nav_4.gif" width=124 height=30></a></td>
+          <td><a href="../product/categoryall.jsp?c=26" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../img/nav_4_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','show','digital','','hide','etc','','hide','old','','hide')"><img name="Image4" border=0 src="../img/nav_4.gif" width=124 height=30></a></td>
        </tr>
        <tr> 
-           <td><a href="../product/categoryall.jsp?c=34" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../img/nav_5_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','show','etc','','hide')"><img name="Image5" border=0 src="../img/nav_5.gif" width=124 height=30></a></td>
+           <td><a href="../product/categoryall.jsp?c=34" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../img/nav_5_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','show','etc','','hide','old','','hide')"><img name="Image5" border=0 src="../img/nav_5.gif" width=124 height=30></a></td>
        </tr>
        <tr> 
-           <td><a href="../product/categoryall.jsp?c=19" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','../img/nav_6_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','show')"><img name="Image6" border=0 src="../img/nav_6.gif" width=124 height=30></a></td>
+           <td><a href="../product/categoryall.jsp?c=19" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','../img/nav_6_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','show','old','','hide')"><img name="Image6" border=0 src="../img/nav_6.gif" width=124 height=30></a></td>
+      </tr>
+      <tr> 
+          <td><a href="../product/categoryall.jsp?c=23" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../img/nav_1_back.gif',1);MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','show')"><img name="Image1" border=0 src="../img/nav_1.gif" width=124 height=30></a></td>
       </tr>
      </table>
 
@@ -82,7 +85,7 @@ function MM_showHideLayers() {
 </table>
 
 <div id="computer" style="position:absolute; left:123px; top:220px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#d59bd7" onMouseOver="MM_showHideLayers('computer','','show','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#d59bd7" onMouseOver="MM_showHideLayers('computer','','show','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
     <tr> 
       <td  onmouseover="this.style.background='#ffff99'" style="padding-top: 2px" onmouseout="this.style.background='#edfaee'" bgcolor=#ffffcc  height=14><a href="../product/category.jsp?c=23" target=_top>&nbsp;&nbsp;브랜드 PC</a></td></tr>
    <tr>
@@ -93,7 +96,7 @@ function MM_showHideLayers() {
 </div>
 
 <div id="pc" style="position:absolute; left:123px; top:245px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#d59bd7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','show','software','','hide','network','','hide','digital','','hide','etc','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#d59bd7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','show','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
    <tr>
        <td onmouseover="this.style.background='#f4daf4'"  style="padding-top: 2px"  onmouseout="this.style.background='#f8eef8';" width=94  bgcolor=#f8eef8><a href="../product/category.jsp?c=1" target=_top>&nbsp;&nbsp;C P U</a></td> </tr>
    <tr>
@@ -128,7 +131,7 @@ function MM_showHideLayers() {
 </div>
 
 <div id="software" style="position:absolute; left:123px; top:275px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#de93a1" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','show','network','','hide','digital','','hide','etc','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#de93a1" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','show','network','','hide','digital','','hide','etc','','hide','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
    <tr>
         <td onmouseover="this.style.background='#00ff99'" style="padding-top: 2px"  onmouseout="this.style.background='#f9edef'" width=99 bgcolor=#f9edef><a  href="../product/category.jsp?c=30" target=_top>&nbsp;&nbsp;운영체제</a></td></tr>
 	<tr>
@@ -141,7 +144,7 @@ function MM_showHideLayers() {
 </div>
 
 <div id="network" style="position:absolute; left:123px; top:300px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#95c7dd" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','show','digital','','hide','etc','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#95c7dd" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','show','digital','','hide','etc','','hide','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
   <tr>
       <td onmouseover="this.style.background='#d2e9f2'" style="padding-top: 2px" onmouseout="this.style.background='#edf5f9'"  bgcolor=#edf5f9><a href="../product/category.jsp?c=26" target=_top>&nbsp;&nbsp;공유기/분배기</font></a></td>
   <tr>
@@ -152,7 +155,7 @@ function MM_showHideLayers() {
 </div>
 
 <div id="digital" style="position:absolute; left:123px; top:330px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#9bcbd7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','show','etc','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#9bcbd7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','show','etc','','hide','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
    <tr>
         <td onmouseover="this.style.background='#ffccff'" style="padding-top: 2px"  onmouseout="this.style.background='#eef6f8'" width=94 bgcolor=#eef6f8><a href="../product/category.jsp?c=34" target=_top>&nbsp;&nbsp;디지탈카메라</font></a></td></tr>
    <tr>
@@ -165,7 +168,7 @@ function MM_showHideLayers() {
 </div>
 
 <div id="etc" style="position:absolute; left:123px; top:360px; width:100px; z-index:200; visibility: hidden"> 
-  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#9ba9d7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','show')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide')">
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#9ba9d7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','show','old','','hide')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
    <tr>
        <td onmouseover="this.style.background='#d4d8e8'" style="padding-top: 2px" onmouseout="this.style.background='#eef0f8'" width=94  bgcolor=#eef0f8><a href="../product/category.jsp?c=19"  target=_top>&nbsp;&nbsp;저장미디어</a></td></tr>
    <tr>
@@ -175,6 +178,16 @@ function MM_showHideLayers() {
    <tr>
         <td onmouseover="this.style.background='#d4d8e8'" style="padding-top: 2px" onmouseout="this.style.background='#eef0f8'"  bgcolor=#eef0f8><a href="../product/category.jsp?c=22" target=_top>&nbsp;&nbsp;컴퓨터사무용품</a></td></tr>
 </table>
+</div>
+
+
+<div id="old" style="position:absolute; left:123px; top:390px; width:100px; z-index:200; visibility: hidden"> 
+  <table width=110 border=1 cellspacing=1 cellpadding=0 bgcolor="#d59bd7" onMouseOver="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','show')" onMouseOut="MM_showHideLayers('computer','','hide','pc','','hide','software','','hide','network','','hide','digital','','hide','etc','','hide','old','','hide')">
+    <tr> 
+      <td  onmouseover="this.style.background='#ffff99'" style="padding-top: 2px" onmouseout="this.style.background='#edfaee'" bgcolor=#ffffcc  height=14><a href="../product/category.jsp?c=23" target=_top>&nbsp;&nbsp;중고 구매</a></td></tr>
+   <tr>
+       <td onmouseover="this.style.background='#ffff99'" style="padding-top: 2px" onmouseout="this.style.background='#edfaee'" bgcolor=#ffffcc height=14><a href="../product/category.jsp?c=24" target=_top>&nbsp;&nbsp;중고 판매</a></td></tr>
+  </table>
 </div>
 </tbody>
 </table>

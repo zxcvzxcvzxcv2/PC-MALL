@@ -6,7 +6,7 @@
 %>
 
 <body link="#000000" vlink="#000000" alink="#666666">
-<table width=1300 border=0 cellspacing=0 cellpadding=0 height=60 align=left name="top_table">
+<table width=1275 border=0 cellspacing=0 cellpadding=0 height=60 align=left name="top_table">
 	<tbody valign=top align=left>
 		<tr valign=bottom align=left> 
 			<td border=0 width=50 height=50 rowspan=2><a href="../main/index.jsp"><img name="Image5" border=0 src="../img/logo_12.gif" width=350 height=60></a></td>
@@ -27,11 +27,11 @@
 <%
 			if( session.getAttribute("pid") != null) {
 %>
-			<td><a href="../member/logout.jsp" class=line>[ 로그아웃 ]</td>
+			<td><a href="../Member/logout_BootStrap.jsp" class=line>[ 로그아웃 ]</td>
 <%
 			}  else {
 %>
-			<td><a href="../member/login.jsp" class=line>[ 로그인 ]</a></td>
+			<td><a href="../Member/index_BootStrap.jsp" class=line>[ 로그인 ]</a></td>
 <%
 			}
 %>

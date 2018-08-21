@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<table  bgcolor=#eeeeee width=784 border=1  cellpadding=0 cellspacing=0>
+<table  bgcolor=#eeeeee width=1275 border=1  cellpadding=0 cellspacing=0>
 <tbody valign="top" align="left">
   <tr>
     <td height="50" valign="middle" align="center"><font size=2 color=white><b><font color="#7373b9">Copyrightⓒ 

@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" 
          import="java.sql.*,oracle.dbpool.*"
          errorPage="error.jsp" %>
+         
 <%          
 	String mem_uid = session.getAttribute("pid").toString();
+    String pname =(String)session.getAttribute("pname");
   
 	DBConnectionManager pool = DBConnectionManager.getInstance();
 	Connection con = pool.getConnection("ora8");

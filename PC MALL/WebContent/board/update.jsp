@@ -42,6 +42,12 @@ String b_id = request.getParameter("b_id");
 	   		sql = sql + "' ,b_content='"+b_content+"' where b_id="+b_id;
 
 			stmt.executeUpdate(sql);
+       %>
+           <script language=javascript>
+    	alert("수정 하였습니다.");
+    	location.href="board_list.jsp";
+     </script>
+     <% 
         } else { 
 %>
             <script language=javascript>
@@ -57,10 +63,7 @@ String b_id = request.getParameter("b_id");
 	stmt.close(); 
 	pool.freeConnection("ora8", con);
 %>
-    <script language=javascript>
-    	alert("수정 하였습니다.");
-    	location.href="board_list.jsp";
-     </script>
+
 <%
 } catch (Exception e) {
         out.println(e);
@@ -91,12 +94,7 @@ public static String Replace(String original, String oldString, String newString
 
 <html>
 <head><title>컴퓨터전문쇼핑몰</title>
-<script language="Javascript">
-function alrim(){
-	alert("성공적으로 수정하였습니다.");
-	location.href="board_list.jsp";
-}
-</script>
+
 </head>
 <body onload="alrim();">
 </body>

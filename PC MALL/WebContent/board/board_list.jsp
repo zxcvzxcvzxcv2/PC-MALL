@@ -7,18 +7,7 @@
 	<HEAD><TITLE>컴퓨터전문쇼핑몰</TITLE>
 	</HEAD>
 	<link href="../common/u3.css" type=text/css rel=stylesheet>
-	<script language="javascript" type="text/javascript" src="js/createXMLHttpRequest.js"></script>
-<script type="text/javascript">
-console.log("${page.pagePerBlock}" + ":" + "${page.nowBlock}" + ":" + "${page.nowPage}")
-    function check() {
-        if (document.search.keyWord.value == "") {
-            alert("검색어를 입력하세요.");
-            document.search.keyWord.focus();
-            return;
-        }
-        document.search.submit();
-    }
-</script>
+
 
 <BODY leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
     <jsp:include page="../common/basic_screen.jsp" flush="true"/>
@@ -39,13 +28,7 @@ console.log("${page.pagePerBlock}" + ":" + "${page.nowBlock}" + ":" + "${page.no
 			<td width=100 align="center">글쓴이</td>
 			<td width=60 align="center">조회수</td>
 		</tr>
-	<form name="search_form" action="../common/search_view.jsp" method=post>
- 
- 
-                 <input type="text" name="srch_word" size=14>
-                 <input type="image" border=0 src="../img/s.gif">
-    
-    </form>    
+
 		
 		
 		

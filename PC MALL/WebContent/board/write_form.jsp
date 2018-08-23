@@ -51,7 +51,7 @@
 <table width=550 border=1>
 	<tr>
 	   <td width=100 align=center bgcolor="#7eaee9">등록자</td>
-	   <td width=170>&nbsp;<%=pname%></td>
+	   <td width=170>&nbsp;<input type="text" name="b_name" size=15 value="<%=pname%>"></td>
 	   <td width=100 align=center bgcolor="#7eaee9">비밀번호</td>
 	   <td width=170>&nbsp;<input type="password" name="pwd" size=15 value=""></td>
 	</tr>	

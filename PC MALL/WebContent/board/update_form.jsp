@@ -69,7 +69,7 @@ function  go_update(){
 <form method="post" name="update_form" action="update.jsp">
 	<tr class="term">
 	   <td width=120 align=center bgcolor="#7eaee9">등록자</td>
-	   <td width=170 bgcolor=ffffff>&nbsp;<%=b_name%></td>
+	   <td width=170 bgcolor=ffffff>&nbsp;<input type="text" size=10 name="name" ></td>
 	   <td width=120 align=center bgcolor="#7eaee9">등록일</td>
 	   <td width=170 bgcolor=ffffff>&nbsp;<%=b_date%></td>
 	</tr>	

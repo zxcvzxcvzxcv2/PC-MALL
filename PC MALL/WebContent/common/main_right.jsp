@@ -67,9 +67,7 @@
 	<tr><div align=left>
 		<td bgcolor=white><img src="../img/title_bestproduct.gif"></div></td>
 	</tr>
-	<tr>
-		<td bgcolor=#dddddd><img height=1 src="" width=1>xxx</td>
-	</tr>
+
 	<tr>
 		<td>
 			<table width=450 border=0 cellpadding=1 cellspacing=1>

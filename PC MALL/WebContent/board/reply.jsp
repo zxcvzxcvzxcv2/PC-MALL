@@ -45,7 +45,7 @@ Connection con = pool.getConnection("ora8");//인자값 jdbc
              ref=Integer.parseInt(request.getParameter("ref"));
              step=Integer.parseInt(request.getParameter("step"));
              level=Integer.parseInt(request.getParameter("level"));
-     String str="update reply_board set step=step+1 where ref="+ref+" and step > "+ step;
+     String str="update re_board set step=step+1 where ref="+ref+" and step > "+ step;
    			stmt.executeUpdate(str);
    			stmt.close();
             step=step+1;

@@ -96,8 +96,9 @@ try {
 		  <a href="mailform.jsp?b_id=<%=b_id%>"><img src="img/singo.gif" border=0></a>
 		  <a href="javascript:history.go(-1)"><img src="img/b_list.gif" border=0></a>
 	   	</td>
-	  </TR>
+	  </tr>
 	</table>
+
 	
 		<jsp:include page="../common/basic_copyright.jsp" flush="true"/>
 </body>

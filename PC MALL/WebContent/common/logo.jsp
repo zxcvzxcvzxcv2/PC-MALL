@@ -4,6 +4,10 @@
 	String pid =(String)session.getAttribute("pid");
 	String pname=(String)session.getAttribute("pname"); 
 %>
+<%!
+     String b_name ,b_email,b_title,b_content,b_date,b_ip,mailto;
+      int b_id , b_hit , ref=0 ;
+ %>
 
 <body link="#000000" vlink="#000000" alink="#666666">
 <table width=1275 border=0 cellspacing=0 cellpadding=0 height=60 align=left name="top_table">
@@ -27,14 +31,15 @@
 <%
 			if( session.getAttribute("pid") != null) {
 %>
-			<td><a href="../Member/logout_BootStrap.jsp" class=line>[ 로그아웃 ]</td>
+			<td><a href="../member/logout.jsp" class=line>[ 로그아웃 ]</td>
 <%
 			}  else {
 %>
-			<td><a href="../Member/index_BootStrap.jsp" class=line>[ 로그인 ]</a></td>
+			<td><a href="../member/login.jsp" class=line>[ 로그인 ]</a></td>
 <%
 			}
 %>
+            
 			<td align=center><a href="../service/index_site.jsp" class=line>[ 사이트맵 ]</a></td>
 		</tr>
 	</tbody>

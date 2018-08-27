@@ -11,8 +11,6 @@
 <%@page import="java.util.Properties"%>
 
 
-
-
 <%
 request.setCharacterEncoding("utf-8");
 
@@ -63,7 +61,8 @@ try{
     msg.addRecipient(Message.RecipientType.TO, toAddr); // 받는 사람
      
     msg.setContent(content, "text/html;charset=UTF-8"); // 내용과 인코딩
-     
+   
+  
     Transport.send(msg); // 전송
 } catch(Exception e){
     e.printStackTrace();
@@ -72,7 +71,7 @@ try{
     return;
 }
  
-out.println("<script>alert('Send Mail Success!!');location.href='mailForm.html';</script>");
+out.println("<script>alert('Send Mail Success!!');location.href='../board/board_list.jsp';</script>");
 // 성공 시
 %>
 <!-- 출처 http://hunit.tistory.com/306 -->

@@ -4,16 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>파일업로드</title>
+<title>Insert title here</title>
 </head>
 <body>
-    <h3>관리자 - 파일업로드</h3>
-    <form action="Upload.jsp" method="post" enctype="multipart/form-data">
-       제목: <input type="text" name="TITLE"><br/>
-       설명: <input type="text" name="DESCRIPTION"><br/>
-       파일: <input type="file" name="UPLOAD_FILE"><br/><br/>
-       <input type="submit" value="보내기"><br/>
-    </form>
-    
+	<h3>관리자(192.168.1.27) - 파일업로드</h3>
+	<form action="Upload.jsp" method="post" enctype="multipart/form-data">
+		제목:<input type="text"   name="title"> <br/>
+		설명:<input type="text"   name="description"> <br/>
+		파일:<input type="file"   name="upload_file"> <br/><br/>
+		<input type="submit" value="보내기">
+	</form>
 </body>
 </html>

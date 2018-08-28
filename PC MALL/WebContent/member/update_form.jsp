@@ -8,14 +8,11 @@
   
 	DBConnectionManager pool = DBConnectionManager.getInstance();
 	Connection con = pool.getConnection("ora8");
-
 	String mem_name, mem_ssn, mem_pwd, mem_zip, mem_address;
 	String mem_phone, mem_email, mem_job;
-
 	try {
 		Statement stmt=con.createStatement();
 		ResultSet rs=stmt.executeQuery("select m_name, m_ssn, m_pwd, m_zip, m_address, m_phone, m_email, NVL(m_job,0) from member where m_uid='"+ mem_uid +"'");
-
 		if(rs.next()) {
 			mem_name    = rs.getString(1);
 			mem_ssn     = rs.getString(2);	

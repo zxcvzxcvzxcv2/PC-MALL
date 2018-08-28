@@ -33,7 +33,6 @@
 try {
 		DBConnectionManager pool = DBConnectionManager.getInstance();
 		Connection con = pool.getConnection("ora8");
-
 		Statement stmt1=con.createStatement();
 		ResultSet rs=stmt1.executeQuery(sql5);
 %>
@@ -97,4 +96,4 @@ try {
    <jsp:include page="../common/basic_copyright.jsp" flush="true"/>
 <% } %>
 </BODY>
-</HTML>
+</HTML>>

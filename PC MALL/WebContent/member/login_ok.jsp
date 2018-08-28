@@ -10,7 +10,6 @@
 		
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
-
 		if(rs.next()) {
 			
 			uid = rs.getString(1);
@@ -36,16 +35,12 @@
 		    session.setAttribute("pid",uid);	 //회원아이디
 			session.setAttribute("pname",name);	 //회원 이름
 			session.setAttribute("pmember","y"); //회원 인지 아닌지..
-
             // 어플리케이션 변수 설정. 현재 사용자 체크용 - 사용안함
-
 			if( application.getAttribute("activecount") == null){
 		
 				Integer r1 = new Integer("1");
 				application.setAttribute("activecount",r1);
-
 			} else { 
-
 				Integer r2 = (Integer)application.getAttribute("activecount");
 			    int s = r2.intValue(); 
 				Integer r3 = new Integer(++s);
@@ -63,9 +58,7 @@
 				
 <%		 
 			//response.sendRedirect("../main/index.jsp");  위 스크립트와 동일
-
 		 } else if(uid.equals(mem_uid) && !pwd.equals(mem_pwd)) {
-
 			 System.out.println("로그인 실패 - 패스워드 오류");
 %>
 
@@ -79,9 +72,7 @@
 		stmt.close();                       // stmt 닫기   
 		rs.close();                         // rs 닫기
 		pool.freeConnection("ora8", con);   // 커넥션 풀 종료
-
 	} catch(Exception e) {
-
 		out.println(e);
 	}
 	// response.sendRedirect("../main/index.jsp");

@@ -17,7 +17,6 @@
 	<LINK href="../common/u3.css" type=text/css rel=STYLESHEET>
 	<SCRIPT language=JavaScript src="../common/u3.js"></script>
 <script type="text/javascript">
-
 function deleteConfirm(){
 	if (confirm("정말 탈퇴 하시겠습니까??") == true){    //확인
     	//document.form.submit();

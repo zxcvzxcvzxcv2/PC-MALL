@@ -10,7 +10,6 @@
 			document.fname.uid.focus();
 			return;
 		}
-
 		if (document.fname.pwd.value == "") {
 			alert("비밀번호를 입력하세요");
 			document.fname.pwd.focus();
@@ -57,7 +56,8 @@
 							<tr height=40 valign=bottom>
 								<td></td>
 								<td align=center>
-								<input type="button" value="로그인"OnClick="checkInput();">
+								
+								<input type="button" value="로그인" OnClick="checkInput();">
 								<input type="reset" value="취 소">
 								</td>
 							</tr>
@@ -69,6 +69,8 @@
 						<p>
 							아이디(ID)와 패스워드를 입력하세요!!!.<br>
 							<br>
+							<a href="id_find.jsp">ID찾기</a> |
+								<a href="pw_find.jsp">PW찾기</a>
 						<p>
 							아이디가 없으신 분은 <a href="user.jsp"><font color="#ff7508">회원가입</font></a>을
 							하시기 바랍니다.<br>
@@ -84,4 +86,3 @@
 	<%-- <jsp:include page="../common/basic_copyright.jsp" flush="true" /> --%>
 </body>
 </html>
-

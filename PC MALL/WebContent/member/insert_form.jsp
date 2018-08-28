@@ -48,7 +48,6 @@
 			return;
 		}
 	}
-
 	// 숫자와 영문 입력 체크
 	function a_or_d(str) {
 		lower_str = str.toLowerCase();
@@ -59,7 +58,6 @@
 		}
 		return 1;
 	}
-
 	// ID 공백 체크
 	function openuid_check() {
 		 if (document.form_name.uid.value == "") {

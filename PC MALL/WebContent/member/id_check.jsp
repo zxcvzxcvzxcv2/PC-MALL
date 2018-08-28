@@ -15,7 +15,6 @@
             sql = sql + request.getParameter("uid") + "'";
        Statement stmt = con.createStatement();
        ResultSet rs = stmt.executeQuery(sql);
-
        rs.next();
        if(rs.getInt(1) > 0) {
  %>

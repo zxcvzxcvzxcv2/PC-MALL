@@ -12,7 +12,6 @@
 <%
 	DBConnectionManager pool = DBConnectionManager.getInstance();
 	Connection con = pool.getConnection("ora8");
-
      String mem_uid   = request.getParameter("uid");
      String mem_pwd   = request.getParameter("pwd");
      String mem_name  = request.getParameter("name");
@@ -22,11 +21,9 @@
      String mem_zip   = request.getParameter("zip1") + "-" + request.getParameter("zip2");
      String mem_phone = request.getParameter("tel1") + "-" + request.getParameter("tel2") + "-" + request.getParameter("tel3");
      String mem_job   = request.getParameter("job");
-
 	try {
 		Statement stmt = con.createStatement();
         ResultSet rs=stmt.executeQuery("select m_uid from member where m_uid='"+mem_uid+"'");
-
 		if(rs.next()) {
 			rs.close();
 %>

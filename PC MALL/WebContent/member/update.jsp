@@ -6,7 +6,6 @@
 <% 
 	DBConnectionManager pool = DBConnectionManager.getInstance();
 	Connection con = pool.getConnection("ora8");
-
 	try {
 		String mem_uid   = request.getParameter("uid");
 		String mem_pwd   = request.getParameter("pwd");
@@ -16,12 +15,10 @@
 		String mem_phone = request.getParameter("tel");
 		String mem_job   = request.getParameter("job");
 		String mem_name  = request.getParameter("name");  /////////
-
         String sql = "update member set m_pwd=?,";
 		sql = sql +  "m_email=?,m_job=?,m_phone=?,";
 		sql = sql +  "m_zip=?,m_address=?, m_name=? ";  ///////////
 		sql = sql +  "where m_uid ='" + mem_uid + "'";
-
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setString(1, mem_pwd);
 		pstmt.setString(2, mem_email);
@@ -30,7 +27,6 @@
         pstmt.setString(5, mem_zip);
 		pstmt.setString(6, mem_addr);
 		pstmt.setString(7, mem_name);      ///////////////
-
 		pstmt.executeUpdate();
 		pstmt.close();
         pool.freeConnection("ora8", con);
